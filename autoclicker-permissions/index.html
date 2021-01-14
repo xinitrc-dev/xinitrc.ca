@@ -88,6 +88,15 @@
 						  <span>&#8226;</span> <u><a href="https://developer.chrome.com/extensions/tabs#method-executeScript">tabs.executeScript</a></u> is used to manually launch main script inside the tab if it wasn't launched automatically (happens if the page is already opened before the extension is launched).<br>
 						  <span>&#8226;</span> <u><a href="https://developer.chrome.com/extensions/tabs#method-create">tabs.create</a></u> is used to open a new tab, like to open a page that shows what's been updated.<br>
 						  </p>
+
+                          <br><br>
+                          <a name="webNavigation"></a>
+                          <h3>Access browser activity during navigation</h3>
+                          <h6><b><a href="https://developer.chrome.com/docs/extensions/reference/webNavigation/">chrome.webNavigation</a></b></h6>
+                          <p>
+                          Allows to receive notifications when webpage navigation has been changed (url of the page has been changed).<br>
+                          <span>&#8226;</span> <u><a href="https://developer.chrome.com/docs/extensions/reference/webNavigation#event-onHistoryStateUpdated">webNavigation.onHistoryStateUpdated</a></u> is used to execute certain functions when the URL of the page has been updated. This allows to catch when you navigate in and out of stream pages, so that the main script can be restarted appropriately.<br>
+                          </p>
 						  
 						  <br><br>
 						  <a name="displayNotifications"></a>
